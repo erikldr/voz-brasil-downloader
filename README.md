@@ -19,7 +19,7 @@ Download automatizado do programa "A Voz do Brasil" diretamente do site oficial 
 
 1. Clone este repositório:
 ```bash
-git clone https://github.com/seu-usuario/voz-brasil-downloader.git
+git clone https://github.com/erikldr/voz-brasil-downloader.git
 cd voz-brasil-downloader
 ```
 
