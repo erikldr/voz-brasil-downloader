@@ -75,10 +75,10 @@ def download_voz_do_brasil(diretorio, nome_arquivo, data=None):
     url = f"https://audios.ebc.com.br/radiogov/{data.year}/{data.month}/{data_formatada}-a-voz-do-brasil.mp3"
     
     # Nome completo do arquivo
-    nome_completo = diretorio / f"{nome_arquivo}_{data_formatada}.mp3"
+    nome_completo = diretorio / f"{nome_arquivo}.mp3"
     
-    print(f"URL: {url}")
-    print(f"Salvando em: {nome_completo}")
+    #print(f"URL: {url}")
+    #print(f"Salvando em: {nome_completo}")
     
     try:
         # Faz o download do arquivo
