@@ -19,7 +19,7 @@ Download automatizado do programa "A Voz do Brasil" diretamente do site oficial 
 
 1. Clone este repositório:
 ```bash
-git clone https://github.com/seu-usuario/voz-brasil-downloader.git
+git clone https://github.com/erikldr/voz-brasil-downloader.git
 cd voz-brasil-downloader
 ```
 
@@ -46,7 +46,7 @@ python src/downloader.py --filename "voz_brasil" --dest "./downloads" --data 051
 - `--dest`: Diretório onde o arquivo será salvo (obrigatório)
 - `--data`: Data específica no formato DDMMAAAA (opcional)
 
-O arquivo será salvo com o nome no formato: `{filename}_{DD-MM-YY}.mp3`
+O arquivo será salvo com o nome no formato: `{filename}.mp3`
 
 ## Observações
 
