@@ -48,6 +48,36 @@ python src/downloader.py --filename "voz_brasil" --dest "./downloads" --data 051
 
 O arquivo será salvo com o nome no formato: `{filename}.mp3`
 
+## Automatização
+
+O projeto oferece duas formas de automatizar os downloads:
+
+### 1. Usando Windows Task Scheduler
+
+1. Configure o arquivo `automation/run_downloader.bat`
+2. Abra o Task Scheduler do Windows
+3. Crie uma nova tarefa básica
+4. Configure para executar diariamente às 20:30
+5. Aponte para o arquivo .bat
+
+### 2. Usando Python Scheduler
+
+1. Instale as dependências:
+```bash
+pip install -r requirements.txt
+```
+
+2. Execute o scheduler:
+```bash
+python automation/scheduler.py
+```
+
+O scheduler irá:
+- Executar o download todos os dias às 20:30
+- Pular automaticamente fins de semana
+- Manter logs de execução em `logs/voz_brasil_scheduler.log`
+- Salvar os arquivos na pasta `downloads`
+
 ## Observações
 
 - O programa "A Voz do Brasil" é transmitido apenas em dias úteis
